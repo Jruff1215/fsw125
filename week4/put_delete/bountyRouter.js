@@ -49,5 +49,12 @@ bountyRouter
 
         res.send('Successfully Deleted');
     })
+    .put('/:bountyId', (req, res) => {
+        const bountyId = req.params.bountyId;
+        const bountyIndex = bountyInfo.findIndex(bounty => bounty._id === bountyId);
+        Object.assign(bountyInfo[bountyIndex], req.body);
+
+        res.send(`Successfully Updated`)
+    })
 
 module.exports = bountyRouter;
