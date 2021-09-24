@@ -44,7 +44,8 @@
 }
 
 body{
-  background-color: black;
+  background-color: white;
+  background-image: url(./components/bountyhunterimg.PNG);
 }
 .bountyInf {
   border: 5px black;
@@ -52,7 +53,10 @@ body{
   border-radius: 75%;
   border-color: white;
   text-align: center;
-  color: white;
+  color: rgb(14, 15, 15);
+  -webkit-text-stroke: rgb(252, 247, 247);
+  -webkit-text-stroke-width: 1px;
   width: 600px;
+  
   
 }

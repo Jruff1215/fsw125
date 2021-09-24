@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Bounty from './components/Bounty'
 import BountyForm from './components/BountyForm';
+
 function App() {
   const [bountyInfo, setBounties] = useState([]);
 
